@@ -20,15 +20,6 @@
     });
   });
 
-  document.querySelectorAll('details.mechanism').forEach(detail => {
-    detail.addEventListener('toggle', () => {
-      if (!detail.open || !detail.parentElement) return;
-      Array.from(detail.parentElement.children).forEach(sibling => {
-        if (sibling !== detail && sibling.matches('details.mechanism')) sibling.open = false;
-      });
-    });
-  });
-
   const output = document.getElementById('bookmark-out');
   const planText = document.getElementById('plan-text');
   const title = document.getElementById('bookmark-title');
