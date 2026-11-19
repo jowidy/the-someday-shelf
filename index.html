@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>The Someday Shelf · Why we put off things we love</title>
+  <meta name="description" content="An interactive essay on why we postpone leisure, save experiences for better occasions, and hesitate to return to people and activities we miss.">
+  <meta property="og:title" content="The Someday Shelf">
+  <meta property="og:description" content="The psychology of postponing what we want, told through one ordinary evening and the experiments that help explain it.">
+  <meta property="og:image" content="https://jowidy.github.io/the-someday-shelf/assets/evening-960.webp">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/Baskervville.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="story.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#story">Skip to the story</a>
+<header class="topbar">
+  <div class="top-inner">
+    <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="32" height="32">The Someday Shelf</a>
+    <nav aria-label="Main navigation">
+      <a class="top-research" href="research.html">Research notes <span aria-hidden="true">↗</span></a>
+      <details id="chapter-menu">
+        <summary><span class="menu-icon" aria-hidden="true"></span> Chapters</summary>
+        <div class="menu-links"><a href="#story">1. The longer deadline</a><a href="#shelf">2. The cost of starting</a><a href="#phone">3. The next clip</a><a href="#bookmark">4. Picking it back up</a><a href="research.html">Research notes ↗</a></div>
+      </details>
+    </nav>
+  </div>
+  <progress id="progress" value="0" max="100" aria-hidden="true"></progress>
+</header>
+<main>
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="ink-rule" aria-hidden="true"></span>Psychology of leisure</p>
+      <h1 id="hero-title">Why we put off<br><em>what we love.</em></h1>
+      <p class="dek">All week you’ve wanted an evening to yourself. When it finally comes, the book stays shut. What happened between wanting the time and using it?</p>
+      <div class="hero-actions"><a class="button primary" href="#story">Read the essay <span aria-hidden="true">↓</span></a><a class="quiet-link" href="research.html">Read the research <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <figure class="hero-art">
+      <div class="cover" id="evening-scene">
+        <picture><source srcset="assets/evening-560.webp 560w, assets/evening-960.webp 960w, assets/evening-1440.webp 1440w" sizes="(min-width: 1200px) 590px, (min-width: 840px) 48vw, (min-width: 640px) 590px, 94vw"><img src="assets/evening-960.webp" width="1448" height="1086" fetchpriority="high" alt="Mara holds her phone at the kitchen table, one hand on a closed novel. Ellis puts away a glass. His guitar rests against the wall."></picture>
+        <img class="later-frame" id="later-frame" width="1448" height="1086" loading="lazy" src="assets/later-560.webp" srcset="assets/later-560.webp 560w, assets/later-960.webp 960w, assets/later-1440.webp 1440w" sizes="(min-width: 840px) 50vw, 94vw" aria-hidden="true" alt="">
+        <button class="only-js" id="scene-toggle" aria-expanded="false" aria-controls="later-caption"><span class="frame-label">Later that evening</span> <span aria-hidden="true">→</span></button>
+
+      </div>
+      <figcaption><span class="fig-index">Friday evening</span><span id="early-caption">Mara has brought the same book to the table three nights running.</span><span id="later-caption" hidden>The phone is face down. Mara reads while Ellis picks up his guitar.</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="story" class="chapter ticket-chapter">
+    <div class="wrap story-grid">
+      <div class="intro">
+        <p class="eyebrow"><span>Chapter 1</span> The longer deadline</p>
+        <h2>When more time<br>buys <em>less.</em></h2>
+        <p>Mara misses reading. At work on Friday, she pictured an hour on the sofa with her novel. By the time she gets home, a few emails need answers, there’s dinner to make, and Saturday seems like a better bet. It did last Friday, too.</p>
+        <p>Suzanne Shu and Ayelet Gneezy called this pattern the procrastination of enjoyable experiences. In one experiment, they gave 64 students a $6 pastry voucher for a French café. Half had three weeks to use it. The others had two months.</p>
+      </div>
+      <div class="ticket" id="ticket">
+        <div class="ticket-head"><span>Field experiment</span><strong>2010</strong></div>
+        <h3>Which group used more vouchers?</h3>
+        <div class="guess-list only-js" role="group" aria-label="Predict the result">
+          <button data-guess="short" aria-pressed="false">The three-week group</button>
+          <button data-guess="long" aria-pressed="false">The two-month group</button>
+          <button data-guess="same" aria-pressed="false">Both used the same number</button>
+        </div>
+        <details id="answer"><summary>See what happened</summary>
+          <div class="answer-body"><p id="verdict" aria-live="polite">More of the students with the earlier deadline redeemed their vouchers.</p>
+            <figure class="chart"><figcaption>Vouchers redeemed</figcaption>
+              <div class="bar-label"><span>Three weeks</span> <b>10 of 32</b></div><div class="bar"><i style="--share:31.25%"></i></div>
+              <div class="bar-label"><span>Two months</span> <b>2 of 32</b></div><div class="bar"><i style="--share:6.25%"></i></div>
+            </figure>
+            <p>A separate group expected the longer window to help. In the follow-up, some students who missed out said they kept thinking they could go later.</p>
+          </div>
+        </details>
+        <a class="source" href="research.html#voucher">Study notes · Shu &amp; Gneezy, 2010 <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="shelf" class="chapter shelf-chapter">
+    <div class="wrap shelf-layout">
+      <div class="intro"><p class="eyebrow"><span>Chapter 2</span> The cost of starting</p>
+        <h2>What makes tonight<br><em>feel wrong?</em></h2>
+        <p>Mara could read for half an hour. She’s hoping for two. Across the room, her housemate Ellis eyes his guitar. He remembers how good playing felt and how long it took to get past the rusty first minutes. Their hesitation looks similar from the outside.</p>
+
+      </div>
+      <div class="spines">
+        <details class="mechanism" open><summary><span>“I’m saving it for a better night.”</span></summary><div>
+          <p>The friend who recommended the novel loved it. Mara wants to give it her full attention. Researchers studying limited indulgences call the impulse to reserve something special for a fitting moment <em>occasion matching</em>. A novel can start to feel like that bottle you never open.</p>
+          <p>A study closer to home asked 501 adults to imagine returning to something they loved. Those considering a longer absence said they wanted a more special return and preferred to wait.</p>
+          <a class="source" href="research.html#occasion">Occasion matching ↗</a> <a class="source" href="research.html#return">Returning after a gap ↗</a>
+        </div></details>
+        <details class="mechanism"><summary><span>“I can’t face getting started.”</span></summary><div>
+          <p>Ellis has a recording of a half-finished song. Listening to it means finding the session, tuning the guitar and hearing the passage he couldn’t get right last time. Scrolling asks less of him right now, even though he’d rather spend the evening playing.</p>
+          <p>In laboratory experiments, people often chose tasks that required fewer switches between rules. The researchers measured effort in simple tasks. For Ellis, a question worth trying is whether leaving the guitar tuned within reach changes what he does after dinner.</p>
+          <a class="source" href="research.html#effort">Study notes · Kool and colleagues, 2010 ↗</a>
+        </div></details>
+        <details class="mechanism"><summary><span>“It’s another thing on my list.”</span></summary><div>
+          <p>Mara started a reading list to remember friends’ recommendations. Now the oldest title feels overdue. The video describes this resistance as <em>reactance</em>, the urge to reclaim a choice when it seems threatened. Research on reactance has largely examined pressures such as other people’s demands. A private list is a different case.</p>
+          <p>In experiments on leisure, pinning a short activity to an exact time sometimes made it feel more like work. A loose window sometimes preserved enjoyment. If a list helps, keep it. If it feels like homework, try picking by mood.</p>
+          <a class="source" href="research.html#schedule">Scheduling leisure ↗</a> <a class="source" href="research.html#reactance">What reactance studies tested ↗</a>
+        </div></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="phone" class="chapter phone-chapter">
+    <div class="wrap story-grid phone-grid">
+      <figure class="phone-fig"><img src="assets/commute-560.webp" srcset="assets/commute-560.webp 560w, assets/commute-960.webp 960w" sizes="(min-width: 840px) 39vw, 94vw" width="896" height="1120" loading="lazy" alt="On the train, Mara looks past her reflection toward the lights outside. Her phone is in her lap."><figcaption><span class="fig-index">The commute</span> An hour between leaving work and arriving home.</figcaption></figure>
+      <div class="intro"><p class="eyebrow"><span>Chapter 3</span> The next clip</p>
+        <h2>The ease of<br><em>switching away.</em></h2>
+        <p>On the train home, Mara had opened her phone for the departure board. Ten stops later she was skipping between videos, still looking for something worth watching. It’s easy to imagine each new choice making the ride more interesting. Researchers tested that intuition.</p>
+        <p>Katy Tam and Michael Inzlicht had 159 people try two ways of watching videos. When viewers could switch between clips, they reported more boredom on average than when they stayed with one. The broader study found less consistent results with articles and some other samples.</p>
+        <a class="source" href="research.html#switch">Study notes · Tam &amp; Inzlicht, 2024 ↗</a>
+        <aside class="aside-note"><h3>How long a pause?</h3><p>The video proposes ten phone-free minutes before a hobby. Tam and Inzlicht tested switching during a viewing session. Their experiment leaves open whether taking a break beforehand helps, and how long such a break would need to be.</p></aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="bookmark" class="chapter end-chapter">
+    <div class="wrap story-grid">
+      <div class="intro"><p class="eyebrow"><span>Chapter 4</span> Picking it back up</p>
+        <h2>What a return<br><em>has to carry.</em></h2>
+        <p>Ellis used to play music every week with a friend. After a year apart, asking him over for half an hour feels almost inadequate. He keeps meaning to arrange a proper evening. That wish has already cost them several ordinary ones.</p>
+        <p>Linda Hagen and Ed O’Brien asked 1,000 people to identify two friends they felt similarly close to, one recently contacted and one they hadn’t spoken to in a while. Given the choice between texting the assigned friend and doing a longer, dull task alone, 63% chose the text for the recent friend. For the long-absent friend, 46% did.</p>
+        <a class="source" href="research.html#return">Study notes · Hagen &amp; O’Brien, 2025 ↗</a>
+        <p>Back at the table, Mara opens the novel while dishes dry in the rack. In three experiments, people enjoyed a break about as much with work still ahead as they did after finishing it. Some nights exhaustion settles the question. On others the first page can tell you more than another evening spent guessing.</p><a class="source" href="research.html#background">Leisure with work left undone ↗</a>
+      </div>
+      <div class="bookmark-card">
+        <span class="ribbon" aria-hidden="true"></span>
+        <h3>Leave yourself<br>a first move.</h3>
+        <p>If something came to mind while you were reading, pair one action with a moment you already have. You can save the note here.</p>
+        <form id="bookmark-form" class="only-js">
+          <label for="pastime">I’d like to get back to</label>
+          <select id="pastime" name="pastime"><option value="book">A book</option><option value="game">A game</option><option value="music">An album</option><option value="draw">Drawing</option><option value="guitar">Playing guitar</option><option value="friend">A friendship</option></select>
+          <label for="cue">I could start</label>
+          <select id="cue" name="cue"><option value="tea">After tea</option><option value="dinner">After dinner</option><option value="weekend">This weekend</option></select>
+          <button class="button primary" type="submit">Write the note <span aria-hidden="true">→</span></button>
+        </form>
+        <noscript><p>A note on paper works too. “After tea, I’ll open my book and read one page. Then I can stop or keep going.”</p></noscript>
+        <div id="bookmark-out" hidden><h4 id="bookmark-title" tabindex="-1">A note to myself</h4><p id="plan-text"></p><div class="save-actions"><button id="keep-plan" type="button">Save on this device</button><button id="clear-plan" type="button">Remove saved copy</button></div><p id="plan-status" class="status" role="status"></p></div>
+        <a class="source" href="research.html#plans">The research on cue-based plans ↗</a>
+      </div>
+    </div>
+  </section>
+  <section class="afterword wrap">
+    <div><p class="eyebrow"><span class="ink-rule" aria-hidden="true"></span>Further reading</p><h2>Where the evidence leads.</h2></div>
+    <div><p>UnordinaryMind’s video asks why leisure can be hard to begin. The research companion follows its claims back to the studies, from the evidence on waiting for a better occasion to the open question of who experiences this most often.</p>
+    <a class="button primary" href="research.html">Explore the studies <span aria-hidden="true">↗</span></a> <a class="quiet-link" href="https://www.youtube.com/watch?v=QP6H9t17KBc">Watch the essay ↗</a></div>
+  </section>
+</main>
+<footer class="colophon wrap"><span>Mara and Ellis are fictional. The photographic scenes were generated with AI.</span><a href="#top">Back to the beginning ↑</a></footer>
+</body></html>
